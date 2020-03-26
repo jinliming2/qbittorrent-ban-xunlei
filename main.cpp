@@ -204,6 +204,7 @@ void update_peers(const std::string &hash, const uint64_t &size) {
     auto uploaded = peer.FindMember("uploaded");
     auto progress = peer.FindMember("progress");
     if (
+      size > 0 &&
       uploaded != peer.MemberEnd() && uploaded->value.IsUint64() &&
       progress != peer.MemberEnd() && progress->value.IsNumber()
     ) {
