@@ -11,7 +11,7 @@ $ git submodule init
 $ git submodule update --depth 1
 $ # 编辑 main.hpp 文件第 5 行，改为 qbittorrent 本地地址
 $ # qbittorrent 需要开启设置 Web UI 中的 Bypass authentication for clients on localhost，以跳过本地接口请求的帐号认证
-$ g++ -lcurl main.cpp -o qbittorrent-ban-xl
+$ g++ main.cpp -lcurl -o qbittorrent-ban-xl
 ```
 
 ## TODO
