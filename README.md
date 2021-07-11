@@ -5,6 +5,7 @@
 ## Build
 
 ```bash
+$ apt install build-essential libcurl4-openssl-dev
 $ git clone ......
 $ cd ......
 $ git submodule init

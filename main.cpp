@@ -194,7 +194,7 @@ void update_peers(const std::string &hash, const uint64_t &size) {
     auto client = peer.FindMember("client");
     if (client != peer.MemberEnd() && client->value.IsString()) {
       std::string client_str = client->value.GetString();
-      if (std::regex_search(client_str, XL0012) || std::regex_search(client_str, XUNLEI0012)) {
+      if (std::regex_search(client_str, XL0012) || std::regex_search(client_str, XUNLEI001)) {
         banned_list[ip_address] = expire;
         notChangedFlag = false;
         continue;

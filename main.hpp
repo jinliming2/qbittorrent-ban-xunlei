@@ -8,7 +8,7 @@
 #define BANTIME 86400
 
 std::regex XL0012("-XL0012-", std::regex_constants::icase);
-std::regex XUNLEI0012("Xunlei 0.0.1.2", std::regex_constants::icase);
+std::regex XUNLEI001("Xunlei 0\\.0\\.1\\.", std::regex_constants::icase);
 
 std::regex regCOLON(":");
 
